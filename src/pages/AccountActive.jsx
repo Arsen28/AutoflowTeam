@@ -1,6 +1,6 @@
 import Mask10 from '@/assets/masks/Mask_10.png';
 import OptionIcon from '@/assets/optionIcon.png';
-import Avatar from '@/assets/Avatar.png';
+import Avatar from '@/assets/avatar.png';
 import BarChart from '@/assets/bar_chart.png';
 import Leaf from '@/assets/Leaf.png';
 import Speedometer from '@/assets/Speedometer.png';
