@@ -22,7 +22,11 @@ const Links = [
   {
     name: "pricing",
     path: '/pricing'
-  }
+  },
+  {
+    name: 'dashboard',
+    path: '/user/dashboard',
+  },
 ]
 
 export const Header = () => {
