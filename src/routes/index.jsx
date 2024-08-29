@@ -15,6 +15,8 @@ import BookingsPage from '@/pages/user/BookingsPage'
 import AnalyticsPage from '@/pages/user/AnalyticsPage'
 import SupportPage from '@/pages/user/SupportPage'
 import SettingsPage from '@/pages/user/SettingsPage'
+import { SignUpLayout } from '@/layouts/SignUpLayout'
+import { SignUpRoutes } from './SignUpRoutes'
 
 export const HomepageRoutes = () => {
   return (
@@ -45,6 +47,16 @@ export const UserRoutes = () => {
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </UserLayout>
+    </AuthProvider>
+  )
+}
+
+export const SignupRoutes = () => {
+  return (
+    <AuthProvider>
+      <SignUpLayout>
+        <SignUpRoutes />
+      </SignUpLayout>
     </AuthProvider>
   )
 }
