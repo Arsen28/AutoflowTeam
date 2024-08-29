@@ -2,13 +2,14 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import { Layouts } from '@/layouts'
-import { UserRoutes } from '@/routes'
+import { SignupRoutes, UserRoutes } from '@/routes'
 
 function App() {
   return (
     <Routes>
       <Route path="/*" element={<Layouts />} />
       <Route path="/user/*" element={<UserRoutes />} />
+      <Route path="/private/*" element={<SignupRoutes />} />
     </Routes>
   )
 }
