@@ -11,12 +11,12 @@ import { PreFooter } from '@/components/PreFooter'
 import { Footer } from '@/components/Footer'
 import { Spinner } from '@/components/Spinner'
 
-import Mask1 from '@/assets/Mask_1.png'
-import Mask2 from '@/assets/Mask_2.png'
-import Mask3 from '@/assets/Mask_3.png'
-import Mask4 from '@/assets/Mask_4.png'
-import Mask5 from '@/assets/Mask_5.png'
-import Mask6 from '@/assets/Mask_6.png'
+import Mask1 from '@/assets/masks/Mask_1.png'
+import Mask2 from '@/assets/masks/Mask_2.png'
+import Mask3 from '@/assets/masks/Mask_3.png'
+import Mask4 from '@/assets/masks/Mask_4.png'
+import Mask5 from '@/assets/masks/Mask_5.png'
+import Mask6 from '@/assets/masks/Mask_6.png'
 
 export const HomepageLayout = ({ children }) => {
   const dispatch = useDispatch()
