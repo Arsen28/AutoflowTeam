@@ -19,6 +19,8 @@ import { ChooseAutoflowPage } from '@/pages/ChooseAutoflowPage'
 import { GetInTouch } from '@/pages/GetInTouch'
 import { ThankYouPage } from '@/pages/ThankYouPage'
 import { MessageSentPage } from '@/pages/MessageSentPage'
+import { SignUpLayout } from '@/layouts/SignUpLayout'
+import { SignUpRoutes } from './SignUpRoutes'
 
 export const HomepageRoutes = () => {
   return (
@@ -49,6 +51,16 @@ export const UserRoutes = () => {
           <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </UserLayout>
+    </AuthProvider>
+  )
+}
+
+export const SignupRoutes = () => {
+  return (
+    <AuthProvider>
+      <SignUpLayout>
+        <SignUpRoutes />
+      </SignUpLayout>
     </AuthProvider>
   )
 }
