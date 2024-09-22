@@ -15,10 +15,10 @@ export const EverythingOnePlace = () => {
       </div>
       <div className='flex items-center'>
         <div className='w-619 mr-45' >
-          <SectionTitle text="// everything in one place" />
+          <SectionTitle text="// UNLOCK INSIGHTS, DRIVE SUCCESS" />
           <div className='w-full mt-8'>
             <p className='font-medium text-6xl leading-54 -tracking-3'>
-              Developing exceptional software for simplicity & user-friendliness 
+              Real-time and predictive analytics to optimize your fleet performance 
             </p>
           </div>
           <div className='w-full flex gap-10 mt-16'>
@@ -26,14 +26,14 @@ export const EverythingOnePlace = () => {
               type="button" 
               className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
             >
-              14 days free trial
+              JOIN WAITLIST
             </button>
             <button
               type="button"
               style={{boxSizing: 'border-box'}}
               className="uppercase box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
             >
-              Still got questions?
+              Still HAVE questions?
             </button>
           </div>
         </div>

@@ -41,6 +41,9 @@ export default {
         'gray-finance': '#56586866',
         'green-200': '#CDFF05',
         'white-100': '#F5F5F5',
+        'white-20': '#FFFFFF33',
+        'white-30': '#FFFFFF4d',
+        'white-60': '#FFFFFF99',
         'black-200': '#090909',
         'black-300': '#1E1E1E',
         'black-400': '#2b2b2b',
@@ -203,6 +206,10 @@ export default {
         1292: '80.75rem', // 1292px
       },
 
+      minWidth: {
+        58: '3.625rem', // 58px
+      },
+
       maxHeight: {
         1860: '116.25rem', // 1860px
       },
@@ -236,6 +243,7 @@ export default {
         8: '0.5rem', // 8px
         10: '0.625rem', // 10px
         11: '0.6875rem', // 11px
+        12: '0.75rem', // 12px
         13: '0.8125rem', // 13px
         14: '0.875rem', // 14px
         15: '0.9375rem', // 15px

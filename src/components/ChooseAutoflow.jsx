@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { SectionTitle } from './SectionTitle';
 import Payment from '../assets/payment.png'
-import BabyIcon from '../assets/babyIcon.png'
-import RoadIcon from '../assets/roadIcon.png'
+import SupportChatIcon from '../assets/support-chat-icon.png'
+import WebsiteWidgetIcon from '../assets/website-widget-icon.png'
 
 export const ChooseAutoflow = () => {
   const [isOn1, setIsOn1] = useState(true);
@@ -15,7 +15,7 @@ export const ChooseAutoflow = () => {
           <div className='w-367'>
             <SectionTitle text="// why choose autoflow" />
             <p className='mt-32 text-6xl leading-51 -tracking-3'>
-              Setup, sit back and relax
+              Everything in one place
             </p>
           </div>
           <div className='mt-77'>
@@ -25,12 +25,12 @@ export const ChooseAutoflow = () => {
                   <span className='text-black text-sm leading-10'>01</span>
                 </div>
                 <p className='text-2xl leading-17 text-white'>
-                  Integrated e-commerce
+                  Fleet Management
                 </p>
               </div>
               <div className='mt-6'>
-                <p className='text-gray-110 leading-19'>
-                  Your customers can easily checkout & pay for their rental vehicle and add convenient trip extras such as additional miles or child safety seat.
+                <p className='text-gray-110 leading-19 -tracking-0.5'>
+                  With real-time updates and an easy-to-navigate interface, the Dashboard provides critical insights into your bookings, fleet performance, and financials, enabling you to make data-driven decisions quickly.
                 </p>
               </div>
             </div>
@@ -41,32 +41,29 @@ export const ChooseAutoflow = () => {
                   <span className='text-black text-sm leading-10'>02</span>
                 </div>
                 <p className='text-2xl leading-17 text-white -tracking-1.5'>
-                  Integrate Stripe to take payments
+                  Built-In Agreements
                 </p>
               </div>
             </div>
             <div className='w-full h-px bg-gradient-to-r from-white to-white-0 '></div>
-            <div className='my-42'>
+            <div className='my-42 pb-[14px]'>
               <div className='flex items-center'>
                 <div className='mr-6 bg-green-200 rounded-full w-40 h-30 flex items-center justify-center'>
                   <span className='text-black text-sm leading-10'>03</span>
                 </div>
                 <p className='text-2xl leading-17 text-white'>
-                  E-Sign Agreements
+                  Integrated Payment Processing
                 </p>
               </div>
             </div>
-            <div className='w-full h-px bg-gradient-to-r from-white to-white-0 '></div>
-            <div className='mt-42'>
-              <div className='flex items-center'>
-                <div className='mr-6 bg-green-200 rounded-full w-40 h-30 flex items-center justify-center'>
-                  <span className='text-black text-sm leading-10'>04</span>
-                </div>
-                <p className='text-2xl leading-17 text-white'>
-                  Car, Watercraft & more
-                </p>
-              </div>
-            </div>
+
+            <button
+              type="button"
+              style={{boxSizing: 'border-box'}}
+              className="uppercase w-full box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
+            >
+              view all features
+            </button>
           </div>
         </div>
       </div>
@@ -84,14 +81,14 @@ export const ChooseAutoflow = () => {
               <div className='flex items-center'>
                 <div className='w-12 h-12 rounded-full bg-gray-130 flex items-center justify-center'>
                   <img
-                    src={BabyIcon}
-                    alt="Baby Icon"
+                    src={SupportChatIcon}
+                    alt="Support Chat Icon"
                     className='w-25 h-25'
                   />
                 </div>
                 <div className='ml-14'>
-                  <p className='mb-3 text-white text-lg leading-13'>Child safety seat</p>
-                  <p className='text-gray-140 text-xs leading-8'>Activate on arrival</p>
+                  <p className='mb-3 text-white text-lg leading-13'>24/7 Support Chat</p>
+                  <p className='text-gray-140 text-xs leading-8'>Need assistance? We're here to help</p>
                 </div>
               </div>
               <div>
@@ -114,14 +111,14 @@ export const ChooseAutoflow = () => {
               <div className='flex items-center'>
                 <div className='w-12 h-12 rounded-full bg-gray-130 flex items-center justify-center'>
                   <img
-                    src={RoadIcon}
-                    alt="Road Icon"
+                    src={WebsiteWidgetIcon}
+                    alt="Website Widget Icon"
                     className='w-25 h-25'
                   />
                 </div>
                 <div className='ml-14'>
-                  <p className='mb-3 text-white text-lg leading-13'>Additional miles</p>
-                  <p className='text-gray-140 text-xs leading-8'>Calculate on arrival</p>
+                  <p className='mb-3 text-white text-lg leading-13'>Website Widget</p>
+                  <p className='text-gray-140 text-xs leading-8'>Easily integrate our widget in your website</p>
                 </div>
               </div>
               <div>
@@ -144,7 +141,7 @@ export const ChooseAutoflow = () => {
             <button
               className='w-full h-51 bg-green-200 rounded-full flex items-center justify-center'
             >
-              <p className='capitalize text-black text-xs leading-8'>I HAVE READ THE AGREEMENT</p>
+              <p className='capitalize text-black text-xs leading-8'>GET STARTED</p>
             </button>
           </div>
         </div>

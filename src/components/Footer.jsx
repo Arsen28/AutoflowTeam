@@ -49,7 +49,7 @@ export const Footer = () => {
             alt="Heart Icon"
             className='w-18 h-18'
           />
-          <span>in Germany</span>
+          <span>in Nashville</span>
         </div>
       </div>
     </div>

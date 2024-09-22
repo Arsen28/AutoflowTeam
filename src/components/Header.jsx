@@ -8,20 +8,24 @@ const Links = [
     path: '/'
   },
   {
-    name: "problem",
-    path: '/problem'
+    name: "faqs",
+    path: '/faq'
   },
   {
-    name: "solution",
-    path: '/solution'
+    name: "contact us",
+    path: '/contact'
   },
   {
-    name: "features",
-    path: '/features'
+    name: "terms",
+    path: '/terms-and-conditions'
   },
   {
     name: "pricing",
     path: '/pricing'
+  },
+  {
+    name: "features",
+    path: '/features'
   },
   {
     name: 'dashboard',
@@ -56,12 +60,18 @@ export const Header = () => {
             }
           </nav>
         </div>
-        <div>
+        <div className='flex gap-[9px]'>
+          <button
+            type="button" 
+            className="uppercase text-black-200 bg-white text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
+          >
+            login
+          </button>
           <button
             type="button" 
             className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
           >
-            14 days free trial
+            join waitlist
           </button>
         </div>
       </div>

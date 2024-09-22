@@ -8,15 +8,15 @@ import ArrowRightBlack from '@/assets/arrow_right_black.png'
 const data = [
   {
     id: 1,
-    text: '111111 Lorem ipsum dolor sit amet consectetur.',
+    text: '1. Before Autoflow, managing our fleet was a headache, with too many manual processes and things slipping through the cracks. Now, everything is in one place—from contracts and payments to maintenance schedules. The support team has been incredibly responsive whenever we’ve had questions. ',
     user: {
-      name: 'Joshua Pavis',
+      name: 'Joshua P.',
       img: Avatar,
     }
   },
   {
     id: 2,
-    text: '222222 Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: '2. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
     user: {
       name: 'Joshua Pavis',
       img: Avatar,
@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 3,
-    text: '3333333 Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: '3. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
     user: {
       name: 'Joshua Pavis',
       img: Avatar,
@@ -32,7 +32,7 @@ const data = [
   },
   {
     id: 4,
-    text: '4 Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: '4. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
     user: {
       name: 'Joshua Pavis',
       img: Avatar,
@@ -40,7 +40,7 @@ const data = [
   },
   {
     id: 5,
-    text: '555555 Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: '5. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
     user: {
       name: 'Joshua Pavis',
       img: Avatar,
@@ -48,7 +48,7 @@ const data = [
   },
   {
     id: 6,
-    text: '6 Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: '6. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
     user: {
       name: 'Joshua Pavis',
       img: Avatar,

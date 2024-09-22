@@ -15,6 +15,10 @@ import BookingsPage from '@/pages/user/BookingsPage'
 import AnalyticsPage from '@/pages/user/AnalyticsPage'
 import SupportPage from '@/pages/user/SupportPage'
 import SettingsPage from '@/pages/user/SettingsPage'
+import { ChooseAutoflowPage } from '@/pages/ChooseAutoflowPage'
+import { GetInTouch } from '@/pages/GetInTouch'
+import { ThankYouPage } from '@/pages/ThankYouPage'
+import { MessageSentPage } from '@/pages/MessageSentPage'
 
 export const HomepageRoutes = () => {
   return (
@@ -22,11 +26,11 @@ export const HomepageRoutes = () => {
       <Route exact path="/" element={<Home />} />
       <Route exact path="/faq" element={<Faq />} />
       <Route exact path="/contact" element={<ContactUs />} />
-      <Route
-        exact
-        path="/terms-and-conditions"
-        element={<TermsAndConditions />}
-      />
+      <Route exact path="/terms-and-conditions" element={<TermsAndConditions />} />
+      <Route exact path="/choose-autoflow" element={<ChooseAutoflowPage />} />
+      <Route exact path="/get-in-touch" element={<GetInTouch />} />
+      <Route exact path="/thank-you" element={<ThankYouPage />} />
+      <Route exact path="/message-sent" element={<MessageSentPage />} />
       <Route path="/*" element={<Home />} />
     </Routes>
   )
