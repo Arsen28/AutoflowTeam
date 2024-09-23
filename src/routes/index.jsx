@@ -22,6 +22,7 @@ import { MessageSentPage } from '@/pages/MessageSentPage'
 import { SignUpLayout } from '@/layouts/SignUpLayout'
 import { SignUpRoutes } from './SignUpRoutes'
 import LoginPage from '@/pages/LoginPage'
+import { Pricing } from '@/components/Pricing'
 
 export const HomepageRoutes = () => {
   return (
