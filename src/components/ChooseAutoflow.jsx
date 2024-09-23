@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import { SectionTitle } from './SectionTitle';
 import Payment from '../assets/payment.png'
 import SupportChatIcon from '../assets/support-chat-icon.png'
@@ -56,14 +57,15 @@ export const ChooseAutoflow = () => {
                 </p>
               </div>
             </div>
-
-            <button
-              type="button"
-              style={{boxSizing: 'border-box'}}
-              className="uppercase w-full box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
-            >
-              view all features
-            </button>
+            <Link to='/choose-autoflow'>
+              <button
+                type="button"
+                style={{boxSizing: 'border-box'}}
+                className="uppercase w-full box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
+              >
+                view all features
+              </button>
+            </Link>
           </div>
         </div>
       </div>

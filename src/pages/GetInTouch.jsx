@@ -2,6 +2,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import LocationIcon from '@/assets/locationIcon.png'
 import DraftsIcon from '@/assets/draftsIcon.png'
 import PhoneIcon from '@/assets/phoneIcon.png'
+import { Link } from "react-router-dom";
 
 
 export const GetInTouch = () => {
@@ -77,11 +78,13 @@ export const GetInTouch = () => {
           className="block px-8 py-[18px] w-full text-lg leading-28 text-[#FFFFFF99] bg-[#2424244D] rounded-12 border border-[#fffffa33]"
           placeholder="Message"
         ></textarea>
-        <button
-          className="uppercase mt-[66px] bg-green-200 text-xs text-[#090909] font-semibold w-full px-4 py-[18px] flex items-center justify-center rounded-[100px] "
-        >
-          join now
-        </button>
+        <Link to='/thank-you'>
+          <button
+            className="uppercase mt-[66px] bg-green-200 text-xs text-[#090909] font-semibold w-full px-4 py-[18px] flex items-center justify-center rounded-[100px] "
+          >
+            join now
+          </button>
+        </Link>
       </div>
     </div>
   )

@@ -2,6 +2,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import LocationIcon from '@/assets/locationIcon.png'
 import DraftsIcon from '@/assets/draftsIcon.png'
 import PhoneIcon from '@/assets/phoneIcon.png'
+import { Link } from "react-router-dom";
 
 export const ContactUs = () => {
 
@@ -68,11 +69,13 @@ export const ContactUs = () => {
           className="block px-8 py-[18px] w-full text-lg leading-28 text-[#FFFFFF99] bg-[#2424244D] rounded-12 border border-[#fffffa33]"
           placeholder="Message"
         ></textarea>
-        <button
-          className="mt-[136px] bg-green-200 text-xs text-[#090909] font-semibold w-full px-4 py-[18px] flex items-center justify-center rounded-[100px] "
-        >
-          SEND MESSGAGE
-        </button>
+        <Link to='/message-sent' >
+          <button
+            className="mt-[136px] bg-green-200 text-xs text-[#090909] font-semibold w-full px-4 py-[18px] flex items-center justify-center rounded-[100px] "
+          >
+            SEND MESSGAGE
+          </button>
+        </Link>
       </div>
     </div>
   )

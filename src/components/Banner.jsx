@@ -16,19 +16,23 @@ export const Banner = () => {
           </p>
         </div>
         <div className='w-full flex gap-10 mt-56'>
-          <button
-            type="button" 
-            className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
-          >
-            join waitlist
-          </button>
-          <button
-            type="button"
-            style={{boxSizing: 'border-box'}}
-            className="uppercase box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
-          >
-            all features
-          </button>
+          <Link to='/get-in-touch'>
+            <button
+              type="button" 
+              className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
+            >
+              join waitlist
+            </button>
+          </Link>
+          <Link to='/choose-autoflow'>
+            <button
+              type="button"
+              style={{boxSizing: 'border-box'}}
+              className="uppercase box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
+            >
+              all features
+            </button>
+          </Link>
         </div>
         <div className='w-full flex gap-24 mt-[134px]'>
           <p className='leading-24'>
