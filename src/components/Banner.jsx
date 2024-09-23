@@ -4,6 +4,7 @@ import Car from '../assets/car.png'
 import Beenhere from '../assets/beenhere.png'
 import logo4 from '../assets/logo_4.png'
 import Car1 from '../assets/car_1.png'
+import { Link } from 'react-router-dom';
 
 export const Banner = () => {
   return (
