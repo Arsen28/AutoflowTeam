@@ -21,6 +21,7 @@ import { ThankYouPage } from '@/pages/ThankYouPage'
 import { MessageSentPage } from '@/pages/MessageSentPage'
 import { SignUpLayout } from '@/layouts/SignUpLayout'
 import { SignUpRoutes } from './SignUpRoutes'
+import LoginPage from '@/pages/LoginPage'
 
 export const HomepageRoutes = () => {
   return (
@@ -33,6 +34,8 @@ export const HomepageRoutes = () => {
       <Route exact path="/get-in-touch" element={<GetInTouch />} />
       <Route exact path="/thank-you" element={<ThankYouPage />} />
       <Route exact path="/message-sent" element={<MessageSentPage />} />
+      <Route exact path="/pricing" element={<Pricing />} />
+      <Route exact path="/login" element={<LoginPage />} />
       <Route path="/*" element={<Home />} />
     </Routes>
   )

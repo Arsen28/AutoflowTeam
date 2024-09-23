@@ -24,7 +24,7 @@ const Links = [
   },
   {
     name: "features",
-    path: '/features'
+    path: '/choose-autoflow'
   },
   {
     name: 'dashboard',
@@ -57,18 +57,22 @@ export const Header = () => {
           </nav>
         </div>
         <div className='flex gap-[9px]'>
-          <button
-            type="button" 
-            className="uppercase text-black-200 bg-white text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
-          >
-            login
-          </button>
-          <button
-            type="button"
-            className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
-          >
-            join waitlist
-          </button>
+          <Link to='/login'>
+            <button
+              type="button" 
+              className="uppercase text-black-200 bg-white text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
+            >
+              login
+            </button>
+          </Link>
+          <Link to='/get-in-touch'>
+            <button
+              type="button"
+              className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
+            >
+              join waitlist
+            </button>
+          </Link>
         </div>
       </div>
     </div>

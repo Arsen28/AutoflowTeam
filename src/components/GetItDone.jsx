@@ -1,5 +1,8 @@
+import { useLocation } from 'react-router-dom'
 
 export const GetItDone = () => {
+  const location = useLocation()
+  const path = location.pathname
   return (
     <div className="max-w-1248 h-303 bg-green-200 mx-auto w-full flex items-center justify-between rounded-12 ">
       <div className='w-full flex flex-col items-center justify-center'>       
@@ -16,12 +19,16 @@ export const GetItDone = () => {
           >
             14 days free trial
           </button>
-          <button
-            type="button"
-            className="uppercase box-border text-black-200 border border-black-200 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
-          >
-            Contact us
-          </button>
+          {
+            !path.includes('contact') && (
+              <button
+                type="button"
+                className="uppercase box-border text-black-200 border border-black-200 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
+              >
+                Contact us
+              </button>
+            )
+          }
         </div>
       </div>
     </div>

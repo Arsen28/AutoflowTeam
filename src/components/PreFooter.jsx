@@ -28,7 +28,7 @@ export const PreFooter = () => {
           <Link to='/terms-and-conditions'>
             <p className='mb-8 text-withe font-medium text-sm leading-10 -tracking-0.7'>Terms & Conditions</p>
           </Link>
-          <Link to='/contact-us'>
+          <Link to='/contact'>
             <p className='text-withe font-medium text-sm leading-10 -tracking-0.7'>Contact Us</p>
           </Link>
         </div>
