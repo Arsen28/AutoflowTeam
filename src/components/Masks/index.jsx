@@ -113,6 +113,7 @@ export const Masks = ({ height }) => {
     case '/get-in-touch':
     case '/thank-you':
     case '/message-sent':
+    case '/pricing':
       return <GetInTouch />;
     default:
       return <HomeMask height={height} />;

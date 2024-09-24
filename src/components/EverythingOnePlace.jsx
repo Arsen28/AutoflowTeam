@@ -4,7 +4,7 @@ import EverythingInOnePlace from '../assets/everythingInOnePlace.png'
 
 export const EverythingOnePlace = () => {
   return (
-    <div className="max-w-1248 mx-auto w-full h-full mt-156 flex items-center justify-between pt-98 pb-88 rounded-12 border border-white-100 ">
+    <div className="max-w-1248 mx-auto w-full h-full mt-156 mb-[180px] flex items-center justify-between pt-98 pb-88 rounded-12 border border-white-100 ">
       <div className=''>
         <div className='pr-132'>
           <img

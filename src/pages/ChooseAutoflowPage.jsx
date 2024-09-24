@@ -186,7 +186,7 @@ const PaymentCard = () => {
             </div>
           </div>
         </div>
-        <div className='w-full mt-66 pb-5'>
+        <div className='w-full mt-66'>
           <button
             className='w-full h-8 bg-green-200 rounded-full flex items-center justify-center'
           >

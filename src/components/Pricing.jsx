@@ -4,7 +4,7 @@ import CheckSmall from '../assets/check_small.png'
 
 export const Pricing = () => {
   return (
-    <div className={`max-w-1248 mx-auto w-full h-full flex flex-col items-center justify-center pt-166`}>
+    <div className={`max-w-1248 mx-auto w-full h-full flex flex-col items-center justify-center pb-[64px]`}>
       <div className='w-678 text-center'>
         <SectionTitle text="// pricing" />
         <p className='mt-6 text-white text-6xl font-medium leading-50 -tracking-3'>
