@@ -35,7 +35,7 @@ const ContactMask = () => {
     <img
       src={Mask5}
       alt="mask_5"
-      className="absolute top-0 right-0 w-full h-auto z-0 max-w-full max-h-[1550px] object-cover object-center"
+      className="absolute top-0 right-0 w-full h-auto z-0 max-w-full max-h-[1510px] object-cover object-center"
     />
   )
 };
@@ -68,7 +68,7 @@ const GetInTouch = () => {
     <img
       src={Mask12}
       alt="mask_5"
-      className="absolute top-0 right-0 w-full h-auto z-0 max-w-full max-h-[1550px] object-cover object-center"
+      className="absolute top-0 right-0 w-full h-auto z-0 max-w-full max-h-[1530px] object-cover object-center"
     />
   )
 };

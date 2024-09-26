@@ -58,7 +58,7 @@ const data = [
 export const ChooseAutoflowPage = () => {
 
   return (
-    <div className="px-22 w-full h-full mt-35 flex flex-col items-center pt-72">
+    <div className="px-22 w-full h-full flex flex-col items-center">
       <div className='w-[614px] pb-20 flex flex-col items-center'>
         <SectionTitle text="// why choose autoflow" />
         <p className='mt-7 text-[96px] text-center leading-[96px] -tracking-3'>
