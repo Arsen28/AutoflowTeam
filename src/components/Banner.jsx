@@ -49,7 +49,7 @@ export const Banner = () => {
         </div>
       </div>
       <div className='relative w-629 h-567'>
-        <div className='absolute top-0 right-45 border border-white-20 rounded-12 w-367 h-[366px] '>
+        <div className='absolute top-0 right-45 bg-custom-gradient backdrop-blur-50 border border-white-20 rounded-12 w-367 h-[366px] '>
           <div className='relative p-8 pt-7 h-full flex flex-col justify-between'>
             <div className='flex justify-between items-center '>
               <div className=''>
