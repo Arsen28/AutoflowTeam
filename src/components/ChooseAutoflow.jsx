@@ -4,6 +4,7 @@ import { SectionTitle } from './SectionTitle';
 import Payment from '../assets/payment.png'
 import SupportChatIcon from '../assets/support-chat-icon.png'
 import WebsiteWidgetIcon from '../assets/website-widget-icon.png'
+import { PaymentMethodFeatures } from './PaymentMethodFeatures';
 
 export const ChooseAutoflow = () => {
   const [isOn1, setIsOn1] = useState(true);
@@ -70,12 +71,9 @@ export const ChooseAutoflow = () => {
         </div>
       </div>
       <div className='flex items-end justify-end pr-52'>
-        <div className='w-557 h-auto bg-black-400 rounded-12 border border-gray-120 ' >
+        <div className='w-557 h-auto bg-custom-gradient backdrop-blur-50 rounded-12 border border-gray-120 ' >
           <div className='w-full px-60 py-69'>
-            <img
-              src={Payment}
-              className='w-full h-full'
-            />
+            <PaymentMethodFeatures />
           </div>
           <div className='px-8'>
             <p className=''>Extras</p>
@@ -140,11 +138,13 @@ export const ChooseAutoflow = () => {
             </div>
           </div>
           <div className='w-full mt-66 px-5 pb-5'>
-            <button
-              className='w-full h-51 bg-green-200 rounded-full flex items-center justify-center'
-            >
-              <p className='capitalize text-black text-xs leading-8'>GET STARTED</p>
-            </button>
+            <Link to='/get-in-touch'>
+              <button
+                className='w-full h-51 bg-green-200 rounded-full flex items-center justify-center'
+              >
+                <p className='capitalize text-black text-xs leading-8'>GET STARTED</p>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

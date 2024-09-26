@@ -1,3 +1,4 @@
+import React, { forwardRef, useRef } from 'react';
 import { Routes, Route } from 'react-router-dom'
 
 import { AuthProvider } from '@/lib/auth-util'
@@ -24,7 +25,8 @@ import { SignUpRoutes } from './SignUpRoutes'
 import LoginPage from '@/pages/LoginPage'
 import { Pricing } from '@/components/Pricing'
 
-export const HomepageRoutes = () => {
+export const HomepageRoutes = forwardRef(({}) => {
+  const pricingRef = useRef(null);
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
@@ -35,12 +37,12 @@ export const HomepageRoutes = () => {
       <Route exact path="/get-in-touch" element={<GetInTouch />} />
       <Route exact path="/thank-you" element={<ThankYouPage />} />
       <Route exact path="/message-sent" element={<MessageSentPage />} />
-      <Route exact path="/pricing" element={<Pricing />} />
+      <Route exact path="/pricing" element={<Pricing ref={pricingRef} />} />
       <Route exact path="/login" element={<LoginPage />} />
       <Route path="/*" element={<Home />} />
     </Routes>
   )
-}
+});
 
 export const UserRoutes = () => {
   return (

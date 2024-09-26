@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
 export const GetItDone = () => {
   const location = useLocation()
@@ -13,20 +13,28 @@ export const GetItDone = () => {
         </div>
         <p className='mt-29 text-black text-6xl leading-42 font-medium'>Ready to get started?</p>
         <div className='flex gap-10 mt-16 mb-54'>
-          <button
-            type="button" 
-            className="uppercase bg-black-200 text-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
-          >
-            14 days free trial
-          </button>
+          {
+            !path.includes('get-in-touch') && (
+              <Link to='/get-in-touch'>
+                <button
+                  type="button" 
+                  className="uppercase bg-black-200 text-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
+                >
+                  join waitlist
+                </button>
+              </Link>
+            )
+          }
           {
             !path.includes('contact') && (
-              <button
-                type="button"
-                className="uppercase box-border text-black-200 border border-black-200 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
-              >
-                Contact us
-              </button>
+              <Link to='/contact'>
+                <button
+                  type="button"
+                  className="uppercase box-border text-black-200 border border-black-200 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
+                >
+                  Contact us
+                </button>
+              </Link>
             )
           }
         </div>

@@ -20,20 +20,20 @@ const Links = [
   },
   {
     name: 'pricing',
-    path: '/pricing',
+    path: '/',
   },
   {
     name: "features",
     path: '/choose-autoflow'
   },
-  {
-    name: 'dashboard',
-    path: '/user/dashboard',
-  },
-  {
-    name: 'sign up',
-    path: '/private/sign-up ',
-  },
+  // {
+  //   name: 'dashboard',
+  //   path: '/user/dashboard',
+  // },
+  // {
+  //   name: 'sign up',
+  //   path: '/private/sign-up ',
+  // },
 ]
 
 export const Header = () => {
@@ -47,7 +47,13 @@ export const Header = () => {
           <nav className="flex gap-40">
             {Links.map((link, index) => {
               return (
-                <Link key={index.toString()} to={link.path} className="">
+                <Link
+                  key={index.toString()}
+                  to={{
+                    pathname: link.path,
+                    search: link.name === 'pricing' ? '?goto=pricing' : '',
+                  }}
+                >
                   <span className="text-xs font-semibold leading-8 uppercase">
                     {link.name}
                   </span>
