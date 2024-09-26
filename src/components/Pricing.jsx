@@ -3,9 +3,6 @@ import { SectionTitle } from './SectionTitle';
 import CheckSmall from '../assets/check_small.png'
 
 export const Pricing = forwardRef((props, ref) => {
-  
-  console.log('props', props);
-  console.log('ref0', ref);
   return (
     <div ref={ref} className={`max-w-1248 mx-auto w-full h-full flex flex-col items-center justify-center pb-[64px]`}>
       <div className='w-678 text-center'>
