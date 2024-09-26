@@ -8,52 +8,44 @@ import ArrowRightBlack from '@/assets/arrow_right_black.png'
 const data = [
   {
     id: 1,
-    text: '1. Before Autoflow, managing our fleet was a headache, with too many manual processes and things slipping through the cracks. Now, everything is in one place—from contracts and payments to maintenance schedules. The support team has been incredibly responsive whenever we’ve had questions. ',
+    text: 'Autoflow has been a game-changer for us! The Fleet Management feature is excellent—we can monitor everything in real-time, reducing downtime. Our bookings have never been easier to manage. Highly recommended!',
     user: {
-      name: 'Joshua P.',
+      name: '— John R., Elite Car Rentals',
       img: Avatar,
     }
   },
   {
     id: 2,
-    text: '2. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: 'The Dashboard and Booking Calendar are life savers. We can now avoid double bookings and make quicker decisions with the real-time data. Payment processing is a breeze for customers. Love Autoflow!',
     user: {
-      name: 'Joshua Pavis',
+      name: '— Sarah M., DriveEasy Rentals',
       img: Avatar,
     }
   },
   {
     id: 3,
-    text: '3. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: 'Autoflow’s Analytics and Customer Management features have been a big help. We track everything and optimize our fleet with ease. Our clients love how simple it is to book!',
     user: {
-      name: 'Joshua Pavis',
+      name: '— Mike D., QuickLease Auto',
       img: Avatar,
     }
   },
   {
     id: 4,
-    text: '4. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: 'The 24/7 support and website widget are fantastic. Our bookings have increased, and the support team is always available when we need help. Autoflow makes everything easier!',
     user: {
-      name: 'Joshua Pavis',
+      name: '— Lisa K., Premier Vehicle Rentals',
       img: Avatar,
     }
   },
   {
     id: 5,
-    text: '5. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
+    text: 'The E-Signature feature has cut down on paperwork and sped up the process. It’s so convenient for both us and our clients. Autoflow has streamlined everything!',
     user: {
-      name: 'Joshua Pavis',
+      name: '— Tom B., Luxury Rides Co.',
       img: Avatar,
     }
-  },
-  {
-    id: 6,
-    text: '6. Lorem ipsum dolor sit amet consectetur. Quam mi rhoncus ac odio tempor. Proin quam vitae tellus sagittis fusce nulla ut. Risus odio at cursus turpis tortor. Bibendum ultricies at tristique volutpat aliquet faucibus sodales. Vel accumsan sit.',
-    user: {
-      name: 'Joshua Pavis',
-      img: Avatar,
-    }
-  },
+  }
 ];
 
 export const ReviewsSlider = () => {
@@ -85,7 +77,7 @@ export const ReviewsSlider = () => {
             return (
               <div
                 key={review.id.toString()}
-                className={`absolute backdrop-blur-[50px] transition-transform duration-500 ease-in-out ${index == 0 ? 'top-2 right-0 z-30 transform translate-x-[8px]' : ''} ${index == 1 ? 'right-[45px] origin-bottom -rotate-3.414 z-20 transform translate-x-[8px]' : ''} ${index ==  2 ? 'right-[58px] origin-bottom -rotate-9.702 z-10 transform translate-x-0' : ''}`}
+                className={`absolute backdrop-blur-[50px] transition-transform duration-1000 ease-in-out ${index == 0 ? 'top-2 right-0 z-30 transform translate-x-[8px]' : ''} ${index == 1 ? 'right-[45px] origin-bottom -rotate-3.414 z-20 transform translate-x-[8px]' : ''} ${index ==  2 ? 'right-[58px] origin-bottom -rotate-9.702 z-10 transform translate-x-0' : ''}`}
               >
                 <SliderCard
                   text={review.text}
