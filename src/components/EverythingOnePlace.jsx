@@ -1,10 +1,11 @@
 
+import { Link } from 'react-router-dom';
 import { SectionTitle } from './SectionTitle';
 import EverythingInOnePlace from '../assets/everythingInOnePlace.png'
 
 export const EverythingOnePlace = () => {
   return (
-    <div className="max-w-1248 mx-auto w-full h-full mt-156 mb-[180px] flex items-center justify-between pt-98 pb-88 rounded-12 border border-white-100 ">
+    <div className="max-w-1248 backdrop-blur-[50px] mx-auto w-full h-full mt-156 mb-[180px] flex items-center justify-between pt-98 pb-88 rounded-12 border border-white-100 ">
       <div className=''>
         <div className='pr-132'>
           <img
@@ -22,19 +23,23 @@ export const EverythingOnePlace = () => {
             </p>
           </div>
           <div className='w-full flex gap-10 mt-16'>
-            <button
-              type="button" 
-              className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
-            >
-              JOIN WAITLIST
-            </button>
-            <button
-              type="button"
-              style={{boxSizing: 'border-box'}}
-              className="uppercase box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
-            >
-              Still HAVE questions?
-            </button>
+            <Link to='/get-in-touch'>
+              <button
+                type="button" 
+                className="uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
+              >
+                JOIN WAITLIST
+              </button>
+            </Link>
+            <Link to='/faq'>
+              <button
+                type="button"
+                style={{boxSizing: 'border-box'}}
+                className="uppercase box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
+              >
+                Still HAVE questions?
+              </button>
+            </Link>
           </div>
         </div>
       </div>

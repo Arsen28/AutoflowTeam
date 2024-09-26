@@ -31,8 +31,11 @@ export default {
     },
 
     extend: {
-
+      backdropBlur: {
+        '50': '50px', // Custom blur utility
+      },
       backgroundImage: {
+        'custom-gradient': 'linear-gradient(310deg, rgba(255, 255, 255, 0.10) -4.94%, rgba(255, 255, 255, 0.04) 134.75%)',
         'custom-gradient-r-to-l': 'linear-gradient(270deg, #FFF 12.06%, rgba(255, 255, 255, 0.00) 102.08%)',
         'custom-gradient-l-to-r': 'linear-gradient(90deg, #FFF 12.06%, rgba(255, 255, 255, 0.00) 102.08%)',
       },

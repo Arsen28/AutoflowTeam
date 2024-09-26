@@ -85,7 +85,7 @@ export const ReviewsSlider = () => {
             return (
               <div
                 key={review.id.toString()}
-                className={`absolute transition-transform duration-500 ease-in-out ${index == 0 ? 'top-2 right-0 z-30 transform translate-x-[8px]' : ''} ${index == 1 ? 'right-[45px] origin-bottom -rotate-3.414 z-20 transform translate-x-[8px]' : ''} ${index ==  2 ? 'right-[58px] origin-bottom -rotate-9.702 z-10 transform translate-x-0' : ''}`}
+                className={`absolute backdrop-blur-[50px] transition-transform duration-500 ease-in-out ${index == 0 ? 'top-2 right-0 z-30 transform translate-x-[8px]' : ''} ${index == 1 ? 'right-[45px] origin-bottom -rotate-3.414 z-20 transform translate-x-[8px]' : ''} ${index ==  2 ? 'right-[58px] origin-bottom -rotate-9.702 z-10 transform translate-x-0' : ''}`}
               >
                 <SliderCard
                   text={review.text}
