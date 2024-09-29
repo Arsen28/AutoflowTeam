@@ -51,7 +51,7 @@ export const HomepageLayout = ({ children }) => {
       <Masks height={height} />
       <div ref={ref} className="absolute w-full h-auto z-1">
         <Header />
-        <div className={`max-w-1292 mx-auto pt-[120px] relative w-full h-auto `}>
+        <div className={`max-w-1292 mx-auto pt-[105px] px-4 lg:pt-[120px] relative w-full h-auto `}>
           {children}
           <GetItDone />
           <PreFooter />
