@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
 import Logo from '@/assets/AUTOFLOW.svg'
+import MobileLogo from '@/assets/mobile-logo.svg'
+import HamburgerMenu from '@/assets/humburger-menu.svg'
+import AddIcon from '../assets/add-icon.svg'
 
 const Links = [
   {
@@ -38,8 +41,27 @@ const Links = [
 
 export const Header = () => {
   return (
-    <div className="fixed z-50 w-full top-0 left-0 h-56 px-9 header-bg">
-      <div className="h-full flex items-center justify-between">
+    <div className="fixed z-50 w-full top-0 left-0 h-56 px-4 lg:px-9 header-bg">
+      <div className='flex h-full lg:hidden items-center justify-between'>
+        <div>
+          <img
+            src={HamburgerMenu}
+            alt="HamburgerMenu"
+            
+          />
+        </div>
+        <Link to="/">
+          <img src={MobileLogo} alt="header_logo" className='w-[103px] '/>
+        </Link>
+        <div>
+          <img
+            src={AddIcon}
+            alt="AddIcon"
+            
+          />
+        </div>
+      </div>
+      <div className="hidden lg:flex h-full items-center justify-between">
         <Link to="/">
           <img src={Logo} alt="header_logo" className='w-[81px] '/>
         </Link>
