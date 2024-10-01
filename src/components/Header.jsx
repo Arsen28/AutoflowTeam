@@ -51,7 +51,7 @@ export const Header = () => {
           />
         </div>
         <Link to="/">
-          <img src={MobileLogo} alt="header_logo" className='w-[103px] '/>
+          <img src={Logo} alt="header_logo" className='w-[103px] '/>
         </Link>
         <div>
           <img

@@ -118,17 +118,17 @@ const RentTodayCard = () => {
             />
           </div>
           <div className='flex items-center justify-between mt-4 pl-2'>
-            <div className='w-1/3 py-6'>
+            <div className='w-1/3 py-6 lg:py-[3px]'>
               <p className='text-[8px] lg:text-xs leading-8 text-gray-100 mb-10'>Top Speed</p>
-              <p className='text-xs lg:text-base leading-11 text-white'>211Km/h</p>
+              <p className='text-xs lg:text-[16px] leading-11 text-white'>211Km/h</p>
             </div>
-            <div className='w-1/3 border-l border-gray-100 pl-14 py-6'>
+            <div className='w-1/3 border-l border-gray-100 pl-14 py-6 lg:py-[3px]'>
               <p className='text-[8px] lg:text-xs leading-8 text-gray-100 mb-10'>Power</p>
-              <p className='text-xs lg:text-base leading-11 text-white'>711HP</p>
+              <p className='text-xs lg:text-[16px] leading-11 text-white'>711HP</p>
             </div>
-            <div className='w-1/3 border-l border-gray-100 pl-14 py-6'>
+            <div className='w-1/3 border-l border-gray-100 pl-14 py-6 lg:py-[3px]'>
               <p className='text-[8px] lg:text-xs leading-8 text-gray-100 mb-10'>Cylinders</p>
-              <p className='text-xs lg:text-base leading-11 text-white'>8</p>
+              <p className='text-xs lg:text-[16px] leading-11 text-white'>8</p>
             </div>
           </div>
           <div className='w-full mt-25'>
