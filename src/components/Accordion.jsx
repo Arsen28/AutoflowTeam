@@ -13,32 +13,32 @@ export const Accordion = ({ data }) => {
   }
 
   return (
-    <div className='mt-45'>
+    <div className='mt-[51px] lg:mt-45'>
       {
         data?.map((item, index) => {
           const active = item.id === activeId;
           return (
             <Fragment key={item.id.toString()}>
               <div className='flex justify-between w-full mb-35'>
-                <div className=' mr-143'>
-                  <p className='text-2xl text-white leading-17'>
+                <div className='mr-[33px] lg:mr-143'>
+                  <p className='text-base lg:text-2xl text-white leading-17'>
                     {item.question}
                   </p>
                   {
                     active && (
-                      <p className='mt-8 text-base text-gray-110 leading-19 -tracking-0.3'>
+                      <p className='mt-8 text-xs lg:text-base text-gray-110 leading-[16.8px] lg:leading-19 -tracking-[0.24px] lg:-tracking-0.3'>
                         {item.answer}
                       </p>
                     )
                   }
                 </div>
                 <button 
-                  className={`${active ? 'bg-green-200' : 'border border-white'} rounded-full min-w-58 w-58 h-36 flex items-center justify-center`}
+                  className={`${active ? 'bg-green-200' : 'border border-white'} rounded-full min-w-[38px] lg:min-w-58 w-[38px] lg:w-58 h-[24px] lg:h-36 flex items-center justify-center`}
                   onClick={() => handleChange(item.id)}
                 >
                   <img
                     src={ active ? MinusIcon : AddIcon }
-                    className='w-6 h-6 min-w-6'
+                    className='w-5 lg:w-6 h-5 lg:h-6 min-w-5 lg:min-w-6'
                   />
                 </button>
               </div>

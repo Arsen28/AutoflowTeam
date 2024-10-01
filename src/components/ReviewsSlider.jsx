@@ -70,14 +70,14 @@ export const ReviewsSlider = () => {
   const activeData = getActiveData(activeIndex);
 
   return (
-    <div>
-      <div className="w-[550px] min-h-[330px] mt-88 relative">
+    <div className='w-full flex flex-col items-center'>
+      <div className="w-full max-w-[350px] lg:max-w-full lg:w-[550px] min-h-[200px] lg:min-h-[330px] mt-88 relative">
         {
           activeData?.map((review, index) => {
             return (
               <div
                 key={review.id.toString()}
-                className={`absolute backdrop-blur-[50px] transition-transform duration-1000 ease-in-out ${index == 0 ? 'top-2 right-0 z-30 transform translate-x-[8px]' : ''} ${index == 1 ? 'right-[45px] origin-bottom -rotate-3.414 z-20 transform translate-x-[8px]' : ''} ${index ==  2 ? 'right-[58px] origin-bottom -rotate-9.702 z-10 transform translate-x-0' : ''}`}
+                className={`w-[calc(100%-66px)] lg:w-[calc(100%-48px)] absolute backdrop-blur-[50px] transition-transform duration-1000 ease-in-out rounded-12 ${index == 0 ? 'top-2 right-[12px] lg:right-0 z-30 transform translate-x-[8px]' : ''} ${index == 1 ? 'right-[35px] lg:right-[45px] origin-bottom -rotate-3.414 z-20 transform translate-x-[8px]' : ''} ${index ==  2 ? 'right-[40px] lg:right-[58px] origin-bottom -rotate-9.702 z-10 transform translate-x-0' : ''}`}
               >
                 <SliderCard
                   text={review.text}
@@ -92,20 +92,20 @@ export const ReviewsSlider = () => {
       <div className="flex justify-center mt-4 gap-[6px]">
         <button
           onClick={prevSlide}
-          className="w-[58px] h-8 rounded-full flex items-center justify-center border"
+          className="w-[45px] lg:w-[58px] h-[28px] lg:h-8 rounded-full flex items-center justify-center border"
         >
           <img
-            className='w-6 h-6'
+            className='w-[18px] lg:w-6 h-[18px] lg:h-6'
             src={ArrowLeftWhite}
             alt=''
           />
         </button>
         <button
           onClick={nextSlide} 
-          className="bg-green-200 w-[58px] h-8 rounded-full flex items-center justify-center"
+          className="bg-green-200 w-[45px] lg:w-[58px] h-[28px] lg:h-8 rounded-full flex items-center justify-center"
         >
           <img
-            className='w-6 h-6'
+            className='w-[18px] lg:w-6 h-[18px] lg:h-6'
             src={ArrowRightBlack}
             alt=''
           />
@@ -124,37 +124,37 @@ const SliderCard = ({
   return (
     <div 
       style={{background: "linear-gradient(310deg, rgba(255, 255, 255, 0.10) -4.94%, rgba(255, 255, 255, 0.04) 134.75%)"}}
-      className="w-[502px] h-[278px] border border-[#fffffa33] rounded-12 px-5 pt-[28px] pb-[44px] backdrop-blur-2xl flex flex-col justify-between"
+      className="w-full lg:w-[502px] h-[163px] lg:h-[278px] border border-[#fffffa33] rounded-12 px-[11px] lg:px-5 pt-[14px] lg:pt-[28px] pb-[21px] lg:pb-[44px] backdrop-blur-2xl flex flex-col justify-between"
     >
       <div className="w-full">
-        <div className='mb-4'>
+        <div className='mb-2 lg:mb-4'>
           <img
-            className="w-[21px] h-[14px]"
+            className="w-[12px] lg:w-[21px] h-[7px] lg:h-[14px]"
             src={Quote}
             alt='Quote'
           />
         </div>
-        <div className='pr-[10px] pl-[22px]'>
-          <p className='leading-6 -tracking-[0.43px] line-clamp-4'>{text}</p>
+        <div className='pr-[10px] pl-[11px] lg:pl-[22px]'>
+          <p className='text-[10px] lg:text-base leading-[15px] lg:leading-6 -tracking-[0.32px] lg:-tracking-[0.43px] line-clamp-4'>{text}</p>
         </div>
-        <div className='mt-2 flex justify-end'>
+        <div className='mt-1 lg:mt-2 flex justify-end'>
           <img
-            className="w-[21px] h-[14px]"
+            className="w-[12px] lg:w-[21px] h-[7px] lg:h-[14px]"
             src={Quote}
             alt='Quote'
           />
         </div>
       </div>
-      <div className='w-full flex items-center pl-[22px] mt-7'>
+      <div className='w-full flex items-center pl-[11px] lg:pl-[22px] mt-3 lg:mt-7'>
         <img
-          className="w-[33px] h-[33px] rounded-full mr-2"
+          className="w-[17px] lg:w-[33px] h-[17px] lg:h-[33px] rounded-full mr-2"
           src={userAvatar}
           alt='Avatar'
         />
-        <span className='text-xs font-[450]'>{userName}</span>
+        <span className='text-[8px] lg:text-xs font-[450]'>{userName}</span>
         <div className='ml-2'>
           <img
-            className="w-[13px] h-[13px] rounded-full"
+            className="w-[7px] lg:w-[13px] h-[7px] lg:h-[13px] rounded-full"
             src={Checked}
             alt='Checked'
           />

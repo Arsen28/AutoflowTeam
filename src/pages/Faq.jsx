@@ -40,7 +40,7 @@ const data = [
 export const Faq = () => {
 
   return (
-    <div className="px-22 mb-[65px]">
+    <div className="lg:px-22 mb-[65px]">
       <SectionTitle text="// ask anything" />
       <p className="mt-4 text-8xl font-medium leading-none -tracking-3.84">FAQ’s</p>
       <div className="pt-39 w-full">

@@ -58,17 +58,17 @@ const data = [
 export const ChooseAutoflowPage = () => {
 
   return (
-    <div className="px-22 w-full h-full flex flex-col items-center">
-      <div className='w-[614px] pb-20 flex flex-col items-center'>
+    <div className="lg:px-22 w-full h-full flex flex-col items-center">
+      <div className='lg:w-[614px] pb-20 flex flex-col items-center'>
         <SectionTitle text="// why choose autoflow" />
-        <p className='mt-7 text-[96px] text-center leading-[96px] -tracking-3'>
+        <p className="mt-5 lg:mt-7 text-5xl lg:text-8xl text-center font-medium leading-none -tracking-[1.92px] lg:-tracking-3.84">
           Everything in one place
         </p>
       </div>
       <PaymentMethodCard />
       <div className='w-full'>
-        <div className=' mt-61'>
-          <div className='mt-77 mb-[90px]'>
+        <div className=''>
+          <div className='mt-[72px] lg:mt-77 mb-[72px] lg:mb-[90px]'>
             {
               data.map((item, index) => {
                 const isLast = data.length == index + 1;
@@ -76,18 +76,18 @@ export const ChooseAutoflowPage = () => {
                   <Fragment
                     key={item.id}
                   >
-                    <div className='flex'>
-                      <div className='w-1/2 flex items-center'>
+                    <div className='lg:flex'>
+                      <div className='lg:w-1/2 flex items-center'>
                         <div className='mr-6 bg-green-200 rounded-full w-40 h-30 flex items-center justify-center'>
                           <span className='text-black text-sm leading-10'>{item.id}</span>
                         </div>
-                        <p className='text-2xl leading-17 text-white'>{item.title}</p>
+                        <p className='text-xl lg:text-2xl leading-17 text-white'>{item.title}</p>
                       </div>
-                      <div className='w-1/2 mt-6'>
-                        <p className='text-gray-110 leading-19 -tracking-0.5'>{item.description}</p>
+                      <div className='lg:w-1/2 mt-6'>
+                        <p className='text-gray-110 text-xs lg:text-base leading-[18px] lg:leading-19 -tracking-0.5'>{item.description}</p>
                       </div>
                     </div>
-                    { !isLast && <div className='w-full h-px bg-gradient-to-r from-white to-white-0 my-[60px]'></div> }
+                    { !isLast && <div className='w-full h-px bg-gradient-to-r from-white to-white-0 my-[24px] lg:my-[60px]'></div> }
                     <div
                       className="opacity-40"
                       style={{
