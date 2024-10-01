@@ -87,7 +87,7 @@ const Card = () => {
   return (
     <div className='w-full h-auto bg-custom-gradient backdrop-blur-50 rounded-12 border border-gray-120 ' >
       <div className='w-full px-60 py-69'>
-        <PaymentMethodFeatures />
+        <PaymentMethodFeatures isHomePage />
       </div>
       <div className='px-8'>
         <p className=''>Extras</p>
