@@ -25,7 +25,7 @@ import { SignUpRoutes } from './SignUpRoutes'
 import LoginPage from '@/pages/LoginPage'
 import { Pricing } from '@/components/Pricing'
 
-export const HomepageRoutes = forwardRef(({}) => {
+export const HomepageRoutes = () => {
   const pricingRef = useRef(null);
   return (
     <Routes>
@@ -42,7 +42,7 @@ export const HomepageRoutes = forwardRef(({}) => {
       <Route path="/*" element={<Home />} />
     </Routes>
   )
-});
+};
 
 export const UserRoutes = () => {
   return (

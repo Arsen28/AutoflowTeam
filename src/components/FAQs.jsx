@@ -32,16 +32,16 @@ const data = [
 export const FAQs = () => {
 
   return (
-    <div className="max-w-1248 mx-auto w-full h-full mt-180 flex justify-between">
+    <div className="max-w-1248 mx-auto w-full h-full mt-8px lg:mt-180 lg:flex justify-between">
       <div className='w-315 mr-139'>
-        <div className=''>
+        <div className='max-w-[200px] lg:max-w-full'>
           <SectionTitle text="// FAQS" />
-          <p className='mt-32 text-6xl leading-51 -tracking-3'>
+          <p className='mt-[18px] lg:mt-32 text-[28px] lg:text-6xl leading-[28px] lg:leading-[60px] -tracking-[1.12px] lg:-tracking-[2.4]'>
             Frequently asked questions
           </p>
         </div>
       </div>
-      <div className='w-[794px]'>
+      <div className='w-full lg:w-[794px]'>
         <Accordion data={data}/>
       </div>
     </div>

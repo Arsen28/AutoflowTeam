@@ -7,8 +7,8 @@ import LinkedinIcon from '../assets/linkedinIcon.png'
 
 export const Footer = () => {
   return (
-    <div className='w-full h-16 bg-black-400'>
-      <div className="max-w-1248 mx-auto w-full h-full my-96 flex items-center justify-between">
+    <div className='w-full h-[172px] lg:h-16 bg-black-400'>
+      <div className="max-w-1248 mx-auto w-full h-full lg:my-96 py-[24px] lg:py-0 flex flex-col lg:flex-row items-center justify-between">
         <div>
           <p className='text-sm leading-10 text-gray-140 font-medium'>© 2024 AutoFlow. All rights reserved.</p>
         </div>

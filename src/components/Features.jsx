@@ -9,16 +9,16 @@ export const Features = () => {
     <div className="max-w-1248 mx-auto w-full h-full pt-[70px] lg:pt-166 flex flex-col items-center justify-center">
       <div className='max-w-full w-678 text-center lg:px-8'>
         <SectionTitle text="// features" />
-        <p className='px-4 mt-6 text-white text-[28px] lg:text-6xl font-medium leading-50 lg:leading-[30px] -tracking-[1.12px] lg:-tracking-3 '>
+        <p className='px-4 mt-6 text-white text-[28px] lg:text-6xl font-medium lg:leading-50 leading-[30px] -tracking-[1.12px] lg:-tracking-3 '>
           Automate and simplify your fleet management
         </p>
       </div>
       <TripTracking />
       <div className='w-full mt-35 lg:flex justify-center gap-27'>
-        <div className='w-full lg:w-612 h-[420px] lg:h-560 rounded-12 border border-white-100'>
+        <div className='w-full lg:w-612 lg:max-w-[calc(50%-14px)] h-[420px] lg:h-560 rounded-12 border border-white-100'>
           <div className='relative flex justify-end mt-[20px] lg:mt-34'>
             <img src={BookingWidget} 
-              className='w-[calc(100%-30px)] h-auto lg:w-[347px] lg:h-[294px] absolute -z-20'
+              className='w-[calc(100%-30px)] h-auto max-h-[650px] lg:w-[347px] lg:h-[294px] absolute -z-20 overflow-hidden'  
             />
           </div>
           <div className='px-[30px] lg:px-60 mt-[207px] lg:mt-[230px]'>
@@ -31,10 +31,10 @@ export const Features = () => {
             </p>
           </div>
         </div>
-        <div className='mt-[24px] lg:mt-0 w-full lg:w-612 h-[420px] lg:h-560 rounded-12 border border-white-100'>
+        <div className='mt-[24px] lg:mt-0 w-full lg:w-612 lg:max-w-[calc(50%-14px)] h-[420px] lg:h-560 rounded-12 border border-white-100'>
           <div className='relative flex justify-end mt-[20px] lg:mt-34'>
             <img src={Customers} 
-              className='w-[calc(100%-30px)] h-auto lg:w-[450px] lg:h-[283px] absolute -z-20'
+              className='w-[calc(100%-30px)] h-auto max-h-[420px] lg:w-[450px] lg:h-[283px] absolute -z-20'
             />
           </div>
           <div className='px-[30px] lg:px-60 mt-[187px] lg:mt-[230px]'>

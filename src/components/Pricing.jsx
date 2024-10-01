@@ -4,14 +4,17 @@ import CheckSmall from '../assets/check_small.png'
 
 export const Pricing = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className={`max-w-1248 mx-auto w-full h-full flex flex-col items-center justify-center pb-[64px]`}>
-      <div className='w-678 text-center'>
+    <div
+      ref={ref}
+      className={`max-w-1248 mx-auto w-full h-full flex flex-col items-center justify-center pb-[64px]`}
+    >
+      <div className='lg:w-678 text-center'>
         <SectionTitle text="// pricing" />
-        <p className='mt-6 text-white text-6xl font-medium leading-50 -tracking-3'>
+        <p className='mt-[18px] lg:mt-6 text-[28px] lg:text-5xl leading-[26.4px] lg:leading-43 -tracking-[0.96px] lg:-tracking-3'>
           Choose a plan that best suits your needs
         </p>
       </div>
-      <div className='w-full mt-65 flex justify-center gap-48'>
+      <div className='w-full mt-[20px] lg:mt-65 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-48'>
         <div className='w-337 pl-9 pr-22 py-42'>
           <div className='mb-8 bg-green-200 rounded-full w-77 h-30 flex items-center justify-center'>
             <span className='uppercase text-black text-sm font-semibold leading-10'>
@@ -51,7 +54,7 @@ export const Pricing = forwardRef((props, ref) => {
               </p>
             </div>
           </div>
-              <div className='pr-14 mt-78'>
+              <div className='pr-14 mt-[48px] lg:mt-78'>
                 <button
                   type="button"
                   className="w-full uppercase box-border text-white border-2 text-xs font-semibold rounded-full leading-8 px-4 py-10 text-center"
@@ -60,7 +63,7 @@ export const Pricing = forwardRef((props, ref) => {
                 </button>
               </div>
         </div>
-        <div className='w-337 pl-9 pr-22 py-42 rounded-12 border border-white-60 relative'>
+        <div className='w-337 pl-9 pr-22 py-[36px] mt-[12px] lg:mt-0 lg:py-42 rounded-12 border border-white-60 relative'>
           <div className='mb-8 bg-green-200 rounded-full w-77 h-30 flex items-center justify-center'>
             <span className='uppercase text-black text-sm font-semibold leading-10'>
               Tier 2
@@ -99,7 +102,7 @@ export const Pricing = forwardRef((props, ref) => {
               </p>
             </div>
           </div>
-          <div className='pr-14 mt-78'>
+          <div className='pr-14 mt-[48px] lg:mt-78'>
             <button
               type="button" 
               className="w-full uppercase text-black-200 bg-green-200 text-xs font-semibold rounded-full leading-8 px-4 py-3 text-center"
