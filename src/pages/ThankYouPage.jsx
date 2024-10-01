@@ -7,14 +7,16 @@ import PhoneIcon from '@/assets/phoneIcon.png'
 export const ThankYouPage = () => {
 
   return (
-    <div className="px-22 mb-[172px] flex justify-between gap-12">
+    <div className="lg:px-22 mb-[72px] lg:mb-[172px] flex justify-between gap-12">
       <div className="">
         <SectionTitle text="// THANK YOU" />
-        <p className="mt-4 mb-9 text-8xl font-medium leading-none -tracking-3.84">You’ve Joined</p>
-        <p className='max-w-[486px] text-[#FFFFFF99] leading-24 -tracking-0.5'>
+        <p className="mt-4 mb-8 lg:mb-9 text-5xl lg:text-8xl font-medium leading-none -tracking-[1.92px] lg:-tracking-3.84">
+          You’ve Joined
+        </p>
+        <p className='max-w-[486px] text-[#FFFFFF99] text-[14px] lg:text-base leading-[21px] lg:leading-24 -tracking-[0.28px] lg:-tracking-0.5'>
           Thank you for joining the Autoflow waitlist! You’ll receive email updates as we make progress, and we’ll notify you once we’re nearing completion of the software.
         </p>
-        <div className="flex items-center mt-[111px]">
+        <div className="flex items-center mt-[72px] lg:mt-[111px]">
           <div className="w-[60px] h-[60px] mr-5 flex items-center justify-center border border-[#fffffa33] rounded-12">
             <img
               className="w-6 h-6"
@@ -27,7 +29,7 @@ export const ThankYouPage = () => {
             <p className="text-lg leading-25">Nashville</p>
           </div>
         </div>
-        <div className="flex items-center mt-9">
+        <div className="flex items-center mt-8 lg:mt-9">
           <div className="w-[60px] h-[60px] mr-5 flex items-center justify-center border border-[#fffffa33] rounded-12">
             <img
               className="w-6 h-6"
@@ -39,7 +41,7 @@ export const ThankYouPage = () => {
             <p className="text-lg leading-25">contact@autoflowl.com</p>
           </div>
         </div>
-        <div className="flex items-center mt-9">
+        <div className="flex items-center mt-8 lg:mt-9">
           <div className="w-[60px] h-[60px] mr-5 flex items-center justify-center border border-[#fffffa33] rounded-12">
             <img
               className="w-6 h-6"
