@@ -34,7 +34,8 @@ export const HomepageLayout = ({ children }) => {
 
   useEffect(() => {
     if (ref?.current) {
-      setHeight(ref.current?.clientHeight - 1229)
+      console.log('ref', ref.current?.offsetHeight);
+      setHeight(ref.current?.offsetHeight - 1229)
     }
   }, [path])
 
@@ -45,11 +46,11 @@ export const HomepageLayout = ({ children }) => {
       </div>
     )
   }
-
+  console.log('height', height);
   return (
     <div className="relative w-full h-full font-hoves">
       <Masks height={height} />
-      <div ref={ref} className="absolute w-full h-auto z-1">
+      <div ref={ref} id='layout-content' className="absolute w-full h-auto z-1">
         <Header />
         <div className={`max-w-1292 mx-auto pt-[105px] px-4 lg:pt-[120px] relative w-full h-auto `}>
           {children}
